@@ -1,1 +1,5 @@
 # Naive-Bayes
+In this project, I used os, numpy, Counter, GaussianNB and accuracy_score to filter spam and "ham"(non-spam)  emails.
+I built a Dictionary of most common 3000 words from all the email content. To begin, I added all words and symbols in the dictionary, removed all non-alpha-numeric characters and any single character alpha-numeric characters, and then shrank the Dictionary by keeping only most common 3000 words in the dictionary. 
+Then, I extracted feature columns and populated their values (Feature Matrix of 3000 comumns and rows equal to the number of email files). This function also analyzed the File Names of each email file and decided if it's a Spame or not based on the naming convention. Based on this the function also creates the Labelled Data Column. 
+Lastly, I "trained" the model using model.fit function and Training Dataset. After that it scores the Test Data set by running the Trained Model with the Test Data set. At the end the program prints the model performance in terms of accuracy score.
